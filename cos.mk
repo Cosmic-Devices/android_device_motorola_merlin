@@ -14,8 +14,11 @@
 
 $(call inherit-product, device/motorola/merlin/full_merlin.mk)
 
-# Inherit CM common stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit cosmic common stuff
+$(call inherit-product, vendor/cos/common.mk)
+
+# Make it official
+COS_RELEASE = true
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -23,7 +26,7 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := merlin
-PRODUCT_NAME := lineage_merlin
+PRODUCT_NAME := cos_merlin
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := merlin

@@ -1,2 +1,2 @@
-add_lunch_combo lineage_merlin-userdebug
-add_lunch_combo lineage_merlin-eng
+add_lunch_combo cos_merlin-userdebug
+add_lunch_combo cos_merlin-eng
